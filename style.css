@@ -34,59 +34,26 @@ html, body {
 
 body {
   color: #ffffff;
+  background-color: var(--background-primary);
   margin: 0;
   padding: 0;
-  font-size: 1.7rem;
-  font-family: "lora-regular", serif;
+  font-size: 1.5rem;
+  font-family: "openSans-regular", "roboto-regular";
   line-height: 3rem;
 }
 /*-------------------------------COLORS-------------------------------*/
 :root {
-  --blue: #00aaff;
-  --violet: #a179f3;
-  --dark-gray: #22282b;
-  --white: #ffffff;
-  --gray-line: #8b9499;
-  --gray: #5b6366;
-  --yellow: #ffaa01;
-  --bg: #333c41;
+  --background-header: #161a22;
+  --background-primary: #090b10;
+  --background-secondary: #0d1017;
+  --border-color: #2b2e34;
+  --red: #ef5466;
+  --green: #00b13d;
+  --bleu-heavy: #486dbb;
+  --blue-light: #599fd0;
+  --secondary-font-color: #383b42;
 }
 
-/*--------BACKGROUND COLOR---------*/
-.color-bg-d {
-  background-color: #333c41;
-}
-.color-bg-darker {
-  background-color: #22282b;
-}
-.color-bg-w {
-  background-color: #ffffff;
-}
-.color-blue {
-  background-color: #00aaff;
-}
-.color-violet {
-  background-color: #a179f3; 
-}
-.color-gray-line {
-  background-color: #8b9499;
-}
-.color-gray {
-  background-color: #5b6366;
-}
-/*--------CONTEXTUAL COLOR---------*/
-.color-txt-d {
-  color: #262626;
-}
-.color-txt-w {
-  color: #ffffff;
-}
-.color-txt-violet {
-  color: #a179f3;
-}
-.color-txt-blue {
-  color: #00aaff;
-}
 /*--------------------------FONT WEIGHT-----------------------------*/
 .f-w-300 {
   font-weight: 300;
@@ -450,6 +417,7 @@ button.btn--stroke:hover {
   justify-content: flex-start;
 }
 .header-nav-wrap {
+  background-color: var(--background-header);
   font-family: "hanken", "free-bold", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -622,6 +590,9 @@ section:nth-child(2) {
   text-align: center;
   max-width: 60%;
 }
+.color-txt-blue {
+  color: var(--secondary-font-color);
+}
 .section-intro h1,
 .section-intro h2 {
   text-align: center;
@@ -720,6 +691,7 @@ section:nth-child(2) {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: var(--background-secondary);
 }
 .work-container .work-item {
   text-align: center;
@@ -817,7 +789,7 @@ section:nth-child(2) {
 
 /*---------------------------------FOOTER------------------------------*/
 footer {
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--secondary-font-color);
   background-color: #070707;
   padding-top: 5rem;
   padding-bottom: 5rem;

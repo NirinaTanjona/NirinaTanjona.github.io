@@ -1,89 +1,56 @@
 /*
- * Lora
+ * Roboto
  */
 @font-face {
-  font-family: 'lora-bold';
-  src: url('./fonts/lora/lora-bold-webfont.eot');
-  src: url('./fonts/lora/lora-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('./fonts/lora/lora-bold-webfont.woff') format('woff'),
-       url('./fonts/lora/lora-bold-webfont.ttf') format('truetype'),
-       url('./fonts/lora/lora-bold-webfont.svg#lorabold') format('svg');
+  font-family: 'roboto-bold';
+  src: url('./fonts/Roboto/Roboto-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'lora-bold-italic';
-  src: url('./fonts/lora/lora-bolditalic-webfont.eot');
-  src: url('./fonts/lora/lora-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('./fonts/lora/lora-bolditalic-webfont.woff') format('woff'),
-       url('./fonts/lora/lora-bolditalic-webfont.ttf') format('truetype'),
-       url('./fonts/lora/lora-bolditalic-webfont.svg#loralbold_italic') format('svg');
+  font-family: 'roboto-Regular';
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'lora-italic';
-  src: url('./fonts/lora/lora-italic-webfont.eot');
-  src: url('./fonts/lora/lora-italic-webfont.eot?iefix') format('embedded-opentype'),
-       url('./fonts/lora/lora-italic-webfont.woff') format('woff'),
-       url('./fonts/lora/lora-italic-webfont.ttf') format('truetype'),
-       url('./fonts/lora/lora-italic-webfont.svg#loraitalic') format('svg');
+  font-family: 'roboto-light';
+  src: url('./fonts/Roboto/Roboto-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'lora-regular';
-  src: url('./fonts/lora/lora-regular-webfont.eot');
-  src: url('./fonts/lora/lora-regular-webfont.eot?iefix') format('embedded-opentype'),
-       url('./fonts/lora/lora-regular-webfont.woff') format('woff'),
-       url('./fonts/lora/lora-regular-webfont.ttf') format('truetype'),
-       url('./fonts/lora/lora-regular-webfont.svg#loraregular') formal('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*
  *
- * Koya
+ * Opent-sans
 ==============================================================================
 */
 @font-face {
-  font-family: 'free-bold';
-  src: url('./fonts/free/FreeSansBold.otf') format('opentype'),
-       url('./fonts/free/FreeSansBold.ttf') format('truetype');
+  font-family: 'openSans-light';
+  src: url('./fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'free-bold-oblique';
-  src: url('./fonts/free/FreeSansBoldOblique.otf') format('opentype'),
-       url('./fonts/free/FreeSansBoldOblique.ttf') format('truetype');
+  font-family: 'openSans-regular';
+  src: url('./fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'free-regular';
-  src: url('./fonts/free/FreeSans.otf') format('opentype'),
-       url('./fonts/free/FreeSans.ttf') format('truetype');
+  font-family: 'openSans-semiBold';
+  src: url('./fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'free-oblique';
-  src: url('./fonts/free/FreeSansOblique.otf') format('opentype'),
-       url('./fonts/free/FreeSansOblique.ttf') format('truetype');
+  font-family: 'openSans-Bold';
+  src: url('./fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'bulgatti';
-  src: url('Bulgatti-xgMV.ttf');
-  font-weight: Bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'hanken';
-  src: url('./fonts/hanken-design-co-terminal-guise-regular.otf') format('opentype')
+  font-family: 'deutschlander';
+  src: url('./fonts/deutschlander/Deutschlander.otf') format('opentype')
 }
 
 
