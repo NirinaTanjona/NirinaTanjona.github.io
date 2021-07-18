@@ -418,6 +418,8 @@ button.btn--stroke:hover {
   flex-direction: column;
   justify-content: center;
   align-item: center;
+  height: 40px;
+  width: 40px;
 }
 
 .navbar-toggler span {
@@ -460,6 +462,9 @@ button.btn--stroke:hover {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   opacity: 0.9;
+}
+.navbar-collapse {
+  display: none;
 }
 .navbar-collapse .header-nav-main {
   display: flex;
@@ -763,8 +768,7 @@ footer .name {
   }
 }
 @media (min-width: 768px) {
-  /*--------HEADER---------*/
-  .s-header .navbar-collapse{
+  .navbar-collapse .header-nav-main {
     display: none;
   }
   /*--------ABOUT----------*/
