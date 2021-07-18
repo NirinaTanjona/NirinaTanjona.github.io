@@ -1,7 +1,4 @@
 /**-------------------------------GENERAL-----------------------------**/
-
-
-
 *, ::after, ::before {
   box-sizing: border-box;
 }
@@ -49,7 +46,7 @@ body {
   --border-color: #2b2e34;
   --red: #ef5466;
   --green: #00b13d;
-  --bleu-heavy: #486dbb;
+  --blue-heavy: #486dbb;
   --blue-light: #599fd0;
   --secondary-font-color: #8e9199;
 }
@@ -90,17 +87,12 @@ a:hover, a:focus, a:active {
  * ------------------------------------------------------------------- 
  */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "free-bold", sans-serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
-	margin-bottom: 2.1rem;
-}
-h3, h4, {
-	margin-bottom: 1.8rem;
 }
 h5, h6, {
-	font-family: "free-bold";
-	margin-bottom: 1.2rem;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
 }
 h1 {
 	font-size: 3.1rem;
@@ -116,7 +108,7 @@ h1 {
 h2 {
 	font-size: 2.4rem;
 	line-height: 1.25;
-  color: #0099cc;
+  color: var(--blue-heavy);
 }
 h3 {
 	font-size: 2rem;
@@ -142,7 +134,7 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
@@ -159,57 +151,14 @@ em, strong, b {
 	font-weight: normal;
 }
 em, i {
-	font-family: "lora-italic", serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
 }
 strong, b {
-	font-family: "lora-bold", serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
 }
 small {
 	font-size: 1.2rem;
 	line-height: inherit;
-}
-blockquote {
-	margin: 3rem 0;
-	padding-left: 4rem;
-	position: relative;
-}
-blockquote:before {
-	content: "\201C";
-	font-size: 8rem;
-	line-height: 0px;
-	margin: 0;
-	color: #313131;
-	font-family: arial, sans-serif;
-	position: absolute;
-	top: 3rem;
-	left: 0;
-}
-blockquote p {
-	font-family: georgia, serif;
-	font-style: italic;
-	padding: 0;
-	font-size: 1.9rem;
-	line-height: 1.737;
-}
-blockquote cite {
-	display: block;
-	font-size: 1.3rem;
-	font-style: normal;
-	line-height: 1.616;
-}
-blockquote cite:before {
-	content: "\2014 \0020";
-}
-blockquote cite a, blockquote cite a:visited {
-	color: #888888;
-	border: none;
-}
-abbr {
-	font-family: "free-bold", serif;
-	font-variant: small-caps;
-	text-transform: lowercase;
-	letter-spacing: .05rem;
-	color: #888888;
 }
 code {
 	font-size: 1.4rem;
@@ -227,7 +176,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  font-family: "free-regular", "Roboto", sans-serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -348,7 +297,7 @@ button.btn--stroke:hover {
   position: absolute;
   left: 0;
   top: -3rem;
-  font-family: "free-bold", sans-serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: .2rem;
@@ -364,7 +313,7 @@ button.btn--stroke:hover {
   right: 0;
   top: -3.6rem;
   display: block;
-  font-family: "free-regular", sans-serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1;
@@ -405,17 +354,20 @@ button.btn--stroke:hover {
 .skill-bars li .percent100  {width: 100%; }
 
 /*---------------------------HEADER-NAVBAR--------------------------------*/
+.s-header {
+  position: fixed;
+}
 .header-nav-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: var(--background-header);
+  position: fixed;
   font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   font-size: 1.5rem;
-  position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 1;
 }
 .header-nav-main {
   display: flex;
@@ -426,7 +378,6 @@ button.btn--stroke:hover {
   flex-wrap: nowrap;
   align-items: stretch;
   height: 100%;
-  
 }
 .header-nav-main li {
   flex: 1 0 auto;
@@ -458,8 +409,6 @@ button.btn--stroke:hover {
 .navbar-brand .profil-picture {
   width: 3rem;
   border-radius: 50%;
-}
-.navbar-toggler {
 }
 
 .navbar-toggler span {
@@ -514,46 +463,13 @@ section:nth-child(2) {
   margin-top: 0;
 }
 /*-----------------------------INTRO-IMAGE----------------------------*/
-.intro-image {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-.intro-image__bg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.intro-image .overlay {
-  position: absolute;
-  background: rgba(0,0,0,0.8);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.display-table {
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-.display-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-.display-cell > .container {
-  margin: 0 auto;
-  text-align: center;
-}
 .text-intro__title {
-  font-family: "hanken";
+  margin-top: 0;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   font-size: 7rem;
 }
 .text-intro__sub {
-  font-family: "lora-regular";
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   font-size: 4rem;
 }
 /*---------------------------------ABOUT--------------------------------*/
@@ -585,7 +501,7 @@ section:nth-child(2) {
   margin-bottom: .5rem;
 }
 .list-info li strong {
-  font-family: "free-bold", sans-serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: .2rem;
   line-height: 2.6rem;
@@ -593,7 +509,7 @@ section:nth-child(2) {
 }
 .list-info li span {
   display: block;
-  font-family: "free-regular", sans-serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   font-size: 1.5rem;
   line-height: 2.7rem;
 }
@@ -633,7 +549,7 @@ section:nth-child(2) {
 .s-card h5 {
   opacity: 1;
   position: relative;
-  font-family: "free-regular", sans-serif;
+  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.2rem;
   text-align: center;
