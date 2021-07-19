@@ -260,10 +260,10 @@ button.btn--stroke:hover {
 }
 
 /*----------------------------BACK TO TOP------------------------*/
-.back-to-top {
+#back-to-top {
   position: fixed;
   display: none;
-  background: #0099e6;
+  background: var(--red);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -276,7 +276,7 @@ button.btn--stroke:hover {
   transition: background 0.5s;
   z-index: 11;
 }
-.back-to-top i {
+#back-to-top i {
   padding-top: 12px;
   color: #fff;
 }
@@ -768,7 +768,8 @@ footer .name {
   }
 }
 @media (min-width: 768px) {
-  .navbar-collapse .header-nav-main {
+  .navbar-collapse .header-nav-main,
+  #back-to-top {
     display: none;
   }
   /*--------ABOUT----------*/
