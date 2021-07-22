@@ -766,25 +766,6 @@ footer .name {
   color: #ffffff; 
 }
 
-
-@media (max-width: 767px) {
-  /*--------INTRO--------*/
-  .text-intro__sub {
-    font-size: 2.8rem;
-    line-height: 5rem;
-  }
-  .text-intro__title {
-    font-size: 5rem;
-  }
-  .section-intro {
-    max-width: 100%;
-    text-align: left;
-  }
-  /*--------CONTACT------*/
-  #contact {
-    background-position: 75% 100%;
-  }
-}
 @media (max-width: 991px) {
   .s-card img {
     opacity: 0.4;
@@ -824,7 +805,7 @@ footer .name {
 @media (min-width: 768px) {
   /*--------HEADER----------*/
   .header-nav-wrap {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .navbar-collapse,
   .navbar-collapse .header-nav-main, 
@@ -842,7 +823,7 @@ footer .name {
   }
   /*-----INTRO------*/
   .text-intro__sub {
-    font-size: 4.5rem;
+    font-size: 5rem;
     line-height: 4.5rem;
     margin: 0;
   }
@@ -851,7 +832,7 @@ footer .name {
     margin: 0 0 5rem 0;
   }
   .text-intro__desc {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   /*-------CONTACT---------*/
   .contact-text {
@@ -864,7 +845,7 @@ footer .name {
 @media (min-width: 992px) {
   /*--------HEADER----------*/
   .header-nav-wrap {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   /*--------INTRO----------*/
   .s-intro .contact-icon {
@@ -882,7 +863,7 @@ footer .name {
     margin: 0 0 5rem 0;
   }
   .text-intro__desc {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   /*--------ABOUT----------*/
   .section-intro {
@@ -940,7 +921,7 @@ footer .name {
     background-attachment: scroll;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   /*responsive header-intro*/
   .s-header {
     position: static;
@@ -971,5 +952,22 @@ footer .name {
   }
   .header-nav-main.collapse li:last-child a {
     border-bottom: none;
+  }
+  /*--------INTRO--------*/
+  .text-intro__sub {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .text-intro__title {
+    font-size: 7.5rem;
+    margin: 0;
+  }
+  .section-intro {
+    max-width: 100%;
+    text-align: left;
+  }
+  /*--------CONTACT------*/
+  #contact {
+    background-position: 75% 100%;
   }
 }
