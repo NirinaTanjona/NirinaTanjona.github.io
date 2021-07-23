@@ -64,3 +64,12 @@
   }
 document.getElementsByClassName("date-time")[0].innerHTML = myDate();
 
+//moving icon-bar on navbar when min-width: 600px
+let iconBar = document.querySelector(".icon-bar");    
+let headerNavMain = document.querySelector(".navbar-collapse").firstElementChild;
+// clone iconBar
+let cln = iconBar.cloneNode(true);
+cln.classList.remove("col-lg-1", "col-md-1", "flex-center");
+cln.classList.add("icon-collapse");
+headerNavMain.appendChild(cln);
+

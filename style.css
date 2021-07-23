@@ -41,9 +41,9 @@ body {
 /*-------------------------------COLORS-------------------------------*/
 :root {
   --background-header: #161a22;
-  --background-primary: #090b10;
-  --background-secondary: #0d1017;
-  --border-color: #2b2e34;
+  --background-primary: #0d1117;
+  --background-secondary: #1c2128;
+  --border-color: #30363d;
   --red: #ef5466;
   --green: #00b13d;
   --blue-heavy: #486dbb;
@@ -953,6 +953,15 @@ footer .name {
   .header-nav-main.collapse li:last-child a {
     border-bottom: none;
   }
+  .header-nav-main .icon-collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem 0; 
+  }
+  .header-nav-main .icon-collapse .contact-icon {
+    margin: 0 2rem;
+  }
   /*--------INTRO--------*/
   .text-intro__sub {
     font-size: 5rem;
@@ -965,6 +974,10 @@ footer .name {
   .section-intro {
     max-width: 100%;
     text-align: left;
+  }
+  /* Display non on icon-bar when width < 768 */
+  .s-intro .icon-bar {
+    display: none;
   }
   /*--------CONTACT------*/
   #contact {
