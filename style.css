@@ -69,7 +69,7 @@ body {
 }
 
 /**
- * links - (_document-setup.scss)
+ * links
  * -------------------------------------------------------------------
  */
 a, a:visited {
@@ -82,7 +82,7 @@ a:hover, a:focus, a:active {
 
 /** 
  * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
+ * typography & general theme styles 
  *
  * ------------------------------------------------------------------- 
  */
@@ -770,9 +770,37 @@ footer .name {
   .s-card img {
     opacity: 0.4;
   }
-
 }
-@media (max-width: 599px) {
+@media (max-width: 499px) {
+  .s-intro {
+    align-items: center;
+  }
+  .s-intro .intro-image {
+    display: none;
+  }
+  .presentation .intro-image {
+    display: block;
+    order: 2;
+  }
+  .presentation .intro-image img {
+    max-width: 250px;
+  }
+  .presentation .text-intro__sub {
+    font-size: 5rem;
+    order: 3;
+    margin: 1rem 0;
+  }
+  .presentation .text-intro__title {
+    font-size: 6rem;
+    order: 1;
+    margin: 0 0 1rem 0;
+  }
+  .presentation .text-intro__desc {
+    order: 4;
+    margin: 0;
+  }
+}
+@media (min-width: 500px) {
   /*--------ABOUT----------*/
   .section-intro {
     margin: 2rem auto;
@@ -783,6 +811,9 @@ footer .name {
     margin-bottom: 4rem;
     font-size: 2.8rem;
     line-height: 3.3rem;
+  }
+  .presentation .intro-image {
+    display: none;
   }
 }
 @media (min-width: 600px) {
@@ -814,7 +845,7 @@ footer .name {
   }
   /*--------INTRO----------*/
   .s-intro .contact-icon {
-    padding-right: 3rem;
+    padding-right: 1rem;
     font-size: 2.5rem;
   }
   /*--------ABOUT----------*/
@@ -975,9 +1006,16 @@ footer .name {
     max-width: 100%;
     text-align: left;
   }
-  /* Display non on icon-bar when width < 768 */
-  .s-intro .icon-bar {
+  /* Display non on icon-bar and date when width < 768 */
+  .s-intro .icon-bar,
+  .s-intro .date-time {
     display: none;
+  }
+  .s-intro .intro-image {
+    order: 1;
+  }
+  .s-intro .presentation {
+    order: 2;
   }
   /*--------CONTACT------*/
   #contact {

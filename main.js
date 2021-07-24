@@ -73,3 +73,14 @@ cln.classList.remove("col-lg-1", "col-md-1", "flex-center");
 cln.classList.add("icon-collapse");
 headerNavMain.appendChild(cln);
 
+//moving intro image on presentation on max-width: 499
+function introImage() {
+  let introImg = document.querySelector("div.intro-image");
+  let presentation = document.querySelector(".presentation"); 
+  let cln = introImg.cloneNode(true);
+  cln.classList.remove("col-lg-5", "col-md-5");
+  presentation.appendChild(cln);
+}
+introImage();
+
+
