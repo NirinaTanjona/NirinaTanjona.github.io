@@ -30,7 +30,7 @@ html, body {
 }
 
 body {
-  color: #ffffff;
+  color: var(--text-font-color);
   background-color: var(--background-primary);
   margin: 0;
   padding: 0;
@@ -41,14 +41,19 @@ body {
 /*-------------------------------COLORS-------------------------------*/
 :root {
   --background-header: #161a22;
-  --background-primary: #0d1117;
-  --background-secondary: #1c2128;
+  --background-primary: #0d1117; /*dark*/
+  --background-secondary: #1c2128; /*light*/
+  --background-dark: #010409;
+  --background-ternary: #21262d; /*lighter*/
   --border-color: #30363d;
   --red: #ef5466;
   --green: #00b13d;
+  --blue: #58a6ff;
   --blue-heavy: #486dbb;
   --blue-light: #599fd0;
-  --secondary-font-color: #8e9199;
+  --header-font-color: #f0f6fc;
+  --title-font-color: #c9d1d9;
+  --text-font-color: #8b949e;
 }
 
 /*--------------------------FONT WEIGHT-----------------------------*/
@@ -91,44 +96,25 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 }
-h5, h6, {
-  font-family: "openSans-semiBold", "roboto-bold", sans-serif;
-}
 h1 {
-	font-size: 3.1rem;
+	font-size: 2.6rem;
 	line-height: 1.355;
-	letter-spacing: -.1rem;
+  color: var(--header-font-color);
+}
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--title-font-color);
 }
 @media only screen and (max-width:600px) {
 	h1 {
-		font-size: 2.6rem;
+		font-size: 2rem;
 		letter-spacing: -.07rem;
 	}
 }
 h2 {
-	font-size: 2.4rem;
-	line-height: 1.25;
-  color: var(--blue-heavy);
-}
-h3 {
-	font-size: 2rem;
-	line-height: 1.5;
-}
-h4 {
 	font-size: 1.7rem;
-	line-height: 1.765;
-}
-h5 {
-	font-size: 1.4rem;
-	line-height: 1.714;
-	text-transform: uppercase;
-	letter-spacing: .15rem;
-}
-h6 {
-	font-size: 1.3rem;
-	line-height: 1.846;
-	text-transform: uppercase;
-	letter-spacing: .15rem;
+	line-height: 1.7;
 }
 p img {
 	margin: 0;
@@ -390,6 +376,10 @@ button.btn--stroke:hover {
 .header-nav-main li a {
   padding: 1.5rem 0;
   text-decoration: none;
+  color: var(--header-font-color);
+}
+.header-nav-main li a:hover {
+  color: var(--text-font-color);
 }
 .navbar-brand {
   display: flex;
@@ -496,8 +486,12 @@ section:nth-child(2) {
   align-items: center;
 }
 .s-intro .contact-icon {
+  color: var(--header-font-color);
   margin-top: 1.5rem;
   font-size: 2.5rem;
+}
+.s-intro .contact-icon:hover {
+  color: var(--text-font-color);
 }
 .s-intro .presentation {
   display: flex;
@@ -515,7 +509,7 @@ section:nth-child(2) {
   max-width: 100%;
   height: auto;
   border-radius: 2px;
-  box-shadow: 0 5px 10px 0 rgba(9, 11, 16, 0.5);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .s-intro .date-time {
   text-align: center;
@@ -549,15 +543,6 @@ section:nth-child(2) {
 .color-txt-blue {
   color: var(--red);
 }
-.section-intro h1,
-.section-intro h2 {
-  text-align: center;
-}
-.section-intro h2 {
-  text-transform: uppercase;
-  font-size: 1.7rem;
-  letter-spacing: .2rem;
-}
 .list-info, .skill-bars {
   padding-left: 0;
   list-style: none;
@@ -571,7 +556,6 @@ section:nth-child(2) {
 }
 .list-info li strong {
   font-family: "openSans-semiBold", "roboto-bold", sans-serif;
-  text-transform: uppercase;
   letter-spacing: .2rem;
   line-height: 2.6rem;
   font-size: 1.5rem;
@@ -615,7 +599,7 @@ section:nth-child(2) {
   opacity: 0.2;
   transform: scale(1.2);
 }
-.s-card h5 {
+.s-card h2 {
   opacity: 1;
   position: relative;
   font-family: "openSans-semiBold", "roboto-bold", sans-serif;
@@ -732,7 +716,7 @@ section:nth-child(2) {
   margin-right: 1.2rem;
 }
 .s-contact .contact-icon::hover {
-  color: #050505;
+  color: var(--title-font-color);
 }
 .s-contact .email {
   color: var(--blue);
@@ -903,13 +887,13 @@ footer .name {
   .s-cards > .container {
     width: 75%;
   }
-  .s-card h5 {
+  .s-card h2 {
     opacity: 0;
   }
   .s-card:hover img {
     opacity: 0.5;
   }
-  .s-card:hover h5 {
+  .s-card:hover h2 {
     opacity: 1;
   }
   /*-------CONTACT---------*/
