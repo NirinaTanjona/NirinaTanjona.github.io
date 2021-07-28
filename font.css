@@ -52,6 +52,10 @@
   font-family: 'deutschlander';
   src: url('./fonts/deutschlander/Deutschlander.otf') format('opentype')
 }
+@font-face {
+  font-family: 'lemonjelly';
+  src: url('./fonts/lemonjelly/LemonJellyPersonalUse-dEqR.ttf') format('truetype');
+}
 
 
 
