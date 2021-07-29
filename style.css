@@ -504,7 +504,7 @@ section:nth-child(2) {
   font-family: "lemonjelly", sans-serif;
   font-size: 5rem;
   position: relative;
-  background-color: var(--red);
+  background-color: #525dad;
   width: 275px;
   height: 275px;
   border-radius: 6px;
