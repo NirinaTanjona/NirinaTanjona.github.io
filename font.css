@@ -56,6 +56,14 @@
   font-family: 'lemonjelly';
   src: url('./fonts/lemonjelly/LemonJellyPersonalUse-dEqR.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'rajdhani-regular';
+  src: url('./fonts/Rajdhani/Rajdhani-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'rajdhani-medium';
+  src: url('./fonts/Rajdhani/Rajdhani-Medium.ttf') format('truetype');
+}
 
 
 
