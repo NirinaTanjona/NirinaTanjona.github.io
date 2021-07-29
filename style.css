@@ -324,6 +324,13 @@ button:focus {
   font-family: "openSans-semiBold", "roboto-bold", sans-serif;
   font-size: 1.6rem;
 }
+.brand-link {
+  text-decoration: none !important;
+  color: var(--title-font-color) !important;
+}
+.brand-link:hover {
+  color: var(--gray-font-color) !important;
+}
 .navbar-brand .profil-picture,
 .navbar-brand span {
   margin-right: 1rem;
