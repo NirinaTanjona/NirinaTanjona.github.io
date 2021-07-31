@@ -554,6 +554,9 @@ footer .separator {
   width: 100%;
   background-color: var(--border-color);
 }
+footer {
+  padding-bottom: 30px;
+}
 
 @media (max-width: 991px) {
   .s-card img {
