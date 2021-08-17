@@ -507,22 +507,13 @@ section:nth-child(2) {
 }
 /*--------------------------------WORK-PROJECT--------------------------*/
 .s-portfolio .card {
-  border: 1px solid black;
-  font-family: "lemonjelly", sans-serif;
-  font-size: 5rem;
-  position: relative;
-  background-color: #525dad;
-  width: 275px;
-  height: 275px;
+  max-width: 800px;
   border-radius: 6px;
-  color: var(--white-font-color);
   margin: 12px 0;
-}
-.s-portfolio .card:hover {
   box-shadow: 0 10px 20px 0 var(--background-dark);
 }
-.s-portfolio .card-title {
-  text-align: center;
+.s-portfolio .card img {
+  width: 100%;
 }
 
 /*-----------------------------CONTACT----------------------------------*/
