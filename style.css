@@ -512,9 +512,6 @@ section:nth-child(2) {
   margin: 12px 0;
   box-shadow: 0 10px 20px 0 var(--background-dark);
 }
-.s-portfolio .card img {
-  width: 100%;
-}
 
 /*-----------------------------CONTACT----------------------------------*/
 .s-contact {
