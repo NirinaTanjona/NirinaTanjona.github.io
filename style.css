@@ -73,7 +73,7 @@ body {
  * links
  * -------------------------------------------------------------------
  */
-a, a:visited {
+a, a > h1, a:visited {
   color: var(--blue);
   text-decoration: none;
 }
@@ -164,6 +164,9 @@ strong {
 .flex-center {
   justify-content: center;
   align-items: center;
+}
+.text-align-center {
+  text-align: center;
 }
 .alert-skill-btn {
   padding: 5px 16px;
